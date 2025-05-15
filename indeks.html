@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Putar Suara</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      button {
+        padding: 20px 40px;
+        font-size: 24px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tombol untuk memutar suara -->
+    <button onclick="document.getElementById('suaraKu').play()">
+      Putar Suara
+    </button>
+
+    <!-- Audio yang akan diputar (tetapi tidak terlihat) -->
+    <audio id="suaraKu" src="suaraKu.mp3" controls></audio>
+  </body>
+</html>
